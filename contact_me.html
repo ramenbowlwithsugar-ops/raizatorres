@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <!--Adobe Font Ophelia-->
+    <link rel="stylesheet" href="https://use.typekit.net/vms5lmu.css" />
+    <!--Style Sheet Link-->
+    <link type="text/css" rel="stylesheet" href="webstyle.css" />
+    <link type="text/css" rel="stylesheet" href="webstyle.css" />
+    <!-- Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/eac2f4393a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Favicon Stuff-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="rt_website/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="rt_website/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="rt_website/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="rt_website/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="RT" />
+    <link rel="manifest" href="rt_website/favicon/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <nav>
+      <!--hamburger-->
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><img
+              src="images_website/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+            />
+          </a>
+        </li>
+        <li class="navbuttons">
+          <a href="about_me.html">About Me</a>
+        </li>
+        <li class="navbuttons">
+          <a href="contact_me.html">Contact Me</a>
+        </li>
+        <li class="navbuttons">
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+      </ul>
+      <!--navbarmain-->
+      <ul>
+        <a href="index.html"
+          ><img
+            class="logo nav"
+            src="images_website/2025_Website_moodboard_RT.png"
+        /></a>
+        <li class="navbuttons" onclick="showSidebar()">
+          <a href="#"
+            ><img
+              src="images_website/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          /></a>
+        </li>
+        <li class="navbuttons hideOnMobile">
+          <a href="about_me.html">About Me</a>
+        </li>
+        <li class="navbuttons hideOnMobile">
+          <a href="contact_me.html">Contact Me</a>
+        </li>
+        <li class="navbuttons hideOnMobile">
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Contact Me</h1>
+      <div class="wrapper">
+        <section class="contact_section">
+          <img src="images_website/Jubby_waaoo_asset.png" width="500" />
+          <p class="information">
+            If you want to know what I am up to or see other stuff, follow my
+            social media For any inquiries, commissioning or hiring, please use
+            the email/s down below!
+          </p>
+        </section>
+        <div class="social_links">
+          <a
+            href="https://www.instagram.com/springkid3?igsh=dWpuMHhkaDB2bXd3&utm_source=qr"
+            target="_blank"
+          >
+            <i class="instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a
+            href="https://www.youtube.com/@mexicanricecakes9784"
+            target="_blank"
+          >
+            <i class="youtube"></i>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
+      <footer>
+        <div class="copyright">
+          <p>2025 all rights reserved | Raiza Torres</p>
+        </div>
+      </footer>
+    </main>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,366 @@
+/*-- CSS Reset --*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*--------------------
+Universal Styling
+----------------*/
+
+nav {
+  font-family: "ofelia-text", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  margin: 0 auto;
+}
+nav ul {
+  width: 100%;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #ffffffc9;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px #000;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.logo {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  padding-top: 20px;
+  margin-left: 3%;
+}
+body {
+  background-color: #f2f2f2;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "ofelia-text", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 20;
+  font-size: 48px;
+}
+
+h2,
+p {
+  margin: 10px;
+  font-family: "arpona-text", sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 50px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+.navbuttons {
+  padding-top: 50px;
+}
+
+ul li {
+  float: right;
+}
+
+ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: white;
+}
+
+footer {
+  font-family: "arponasans", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  font-style: normal;
+  position: fixed;
+  bottom: 0;
+  color: #d91e75;
+}
+.copyright {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+.profile {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.wrapper {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5rem;
+}
+.profile img {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.contact_section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contact_section img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact_section p {
+  font-size: 30px;
+  padding: 50px 0px;
+}
+.social_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.artwork {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 20px;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.intro {
+  flex: 1;
+}
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .contact_section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact_section img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .social_links a {
+    font-size: 1.3rem;
+  }
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+  .contact-container p {
+    font-size: 1rem;
+  }
+}
+
+/*---------------------------------
+
+Video
+
+----------------------------------*/
+
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  max-height: 100vw;
+  width: 100vw;
+  overflow: hidden;
+  background: #f2f2f2;
+}
+
+#video {
+  margin-left: 0px;
+  width: 100%;
+  margin-bottom: -1em;
+}
+
+#play-pause {
+  position: absolute;
+  bottom: 5%;
+  right: 70px;
+  padding-top: 20px;
+  border: none;
+  border-radius: 40px;
+  background-color: transparent;
+  margin: auto;
+  z-index: 1;
+}
+
+#play-pause-center {
+  position: absolute;
+  top: 40%;
+  right: 45%;
+  border: none;
+  border-radius: 40px;
+  background-color: transparent;
+  margin: auto;
+  z-index: 1;
+}
+
+#play-pause:hover {
+  cursor: pointer;
+}
+
+.video-message {
+  color: #fff;
+}

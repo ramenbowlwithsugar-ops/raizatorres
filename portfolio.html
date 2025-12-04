@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!--Adobe Font Ophelia-->
+    <link rel="stylesheet" href="https://use.typekit.net/vms5lmu.css" />
+    <!--Style Sheet Link-->
+    <link type="text/css" rel="stylesheet" href="webstyle.css" />
+    <link type="text/css" rel="stylesheet" href="webstyle.css" />
+    <!-- Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/eac2f4393a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Favicon Stuff-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="RT" />
+    <link rel="manifest" href="favicon/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <nav>
+      <!--hamburger-->
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><img
+              src="images_website/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+            />
+          </a>
+        </li>
+        <li class="navbuttons">
+          <a href="about_me.html">About Me</a>
+        </li>
+        <li class="navbuttons">
+          <a href="contact_me.html">Contact Me</a>
+        </li>
+        <li class="navbuttons">
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+      </ul>
+      <!--navbarmain-->
+      <ul>
+        <a href="index.html"
+          ><img
+            class="logo nav"
+            src="images_website/2025_Website_moodboard_RT.png"
+        /></a>
+        <li class="navbuttons" onclick="showSidebar()">
+          <a href="#"
+            ><img
+              src="images_website/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          /></a>
+        </li>
+        <li class="navbuttons hideOnMobile">
+          <a href="about_me.html">About Me</a>
+        </li>
+        <li class="navbuttons hideOnMobile">
+          <a href="/contact_me.html">Contact Me</a>
+        </li>
+        <li class="navbuttons hideOnMobile">
+          <a href="/portfolio.html">Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Portfolio</h1>
+      <section class="artwork">
+        <img
+          src="images_website/brokenwatercolor.png"
+          width="400"
+          height="500"
+        />
+        <img src="images_website/Maria-1.png" width="400" height="500" />
+        <img src="images_website/maria-2.png" width="400" height="500" />
+        <img src="images_website/that-is-me.png" width="400" height="500" />
+        <img
+          src="images_website/flyingwhalesnsiblingissues.jpg"
+          width="500"
+          height="400"
+        />
+        <img src="images_website/piersportrait.jpg" width="500" height="400" />
+      </section>
+      <footer>
+        <div class="copyright">
+          <p>2025 all rights reserved | Raiza Torres</p>
+        </div>
+      </footer>
+    </main>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
